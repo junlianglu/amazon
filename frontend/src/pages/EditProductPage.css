@@ -1,0 +1,102 @@
+/* Page container */
+.edit-product-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Form container */
+.edit-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels and inputs */
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+input, textarea, select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Images */
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.existing-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.expanded-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.expanded-view img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}

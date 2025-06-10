@@ -1,0 +1,241 @@
+/* ProductPage.css */
+
+.product-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr; /* Images, Description, Purchase Options */
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .product-images {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* Align the thumbnails with the main image */
+    gap: 20px;
+}
+
+/* Description in the center */
+.product-description {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-right: 1px solid #ddd;
+  }
+  
+  /* Purchase options on the right */
+  .purchase-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .purchase-options .add-to-cart,
+  .purchase-options .buy-now {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .purchase-options .buy-now {
+    background-color: #ffd814;
+  }
+  
+  .purchase-options .add-to-cart:hover {
+    background-color: #ddb347;
+  }
+  
+  .purchase-options .buy-now:hover {
+    background-color: #e6b800;
+  }
+  
+  .purchase-options .cart-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+  }
+
+  .purchase-options .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+  }
+
+  .purchase-options .quantity-select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .thumbnail-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align thumbnails to the top */
+    gap: 10px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    max-height: 400px; /* Match the height of the main image container */
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    object-fit: cover;
+}
+
+.thumbnail.active {
+    border-color: #007bff;
+}
+  
+  .main-image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .image-below-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .magnifier {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    display: none;
+  }
+  
+  .main-image:hover .magnifier {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  .product-details h1 {
+    font-size: 24px;
+  }
+  
+  .brand,
+  .price {
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #ddb347;
+  }
+  
+  .similar-products {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .show-more {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .show-more:hover {
+    text-decoration: underline;
+  }
+
+  .rich-text-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  .rich-text-description ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  .rich-text-description li {
+    margin-bottom: 5px;
+  }
+  .rich-text-description p {
+    margin: 10px 0;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }

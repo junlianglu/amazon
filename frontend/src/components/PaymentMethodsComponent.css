@@ -1,0 +1,126 @@
+/* PaymentMethodsComponent.css */
+
+.payment-methods-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.payment-method-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.default-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.card-details {
+  margin-bottom: 15px;
+}
+
+.card-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-default {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: #005bb5;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-remove {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.btn-remove:hover {
+  background-color: #c9302c;
+}
+
+.add-payment-method-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #0073e6;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.add-payment-method-card:hover {
+  background-color: #f1faff;
+}
+
+.add-card-content {
+  color: #0073e6;
+}
+
+.add-icon {
+  font-size: 36px;
+  font-weight: bold;
+}

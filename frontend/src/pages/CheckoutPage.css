@@ -1,0 +1,82 @@
+/* CheckoutPage.css */
+
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .checkout-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .checkout-summary {
+    flex: 2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .order-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .order-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .order-item-info {
+    font-size: 0.9rem;
+  }
+  
+  .checkout-details {
+    flex: 1;
+  }
+  
+  .address-dropdown,
+  .payment-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .checkout-actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .place-order-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .place-order-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }

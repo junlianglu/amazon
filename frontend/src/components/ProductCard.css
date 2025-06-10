@@ -1,0 +1,59 @@
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-container {
+  width: 100%; /* Ensure consistent width for all images */
+  height: 200px; /* Set a consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Crop the image if it exceeds the container size */
+  border-radius: 8px;
+  background-color: transparent; /* Optional: Add a background color for empty areas */
+}
+
+.product-image {
+  max-width: 100%; /* Scale down to fit the container */
+  max-height: 100%; /* Ensure it doesn't exceed the container height */
+  object-fit: contain; /* Maintain aspect ratio and fill the container */
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+  display: -webkit-box; /* For webkit browsers */
+  -webkit-line-clamp: 4; /* Limits the text to 4 lines */
+  -webkit-box-orient: vertical; /* Specifies vertical orientation for the box */
+  overflow: hidden; /* Ensures that overflowing text is hidden */
+  text-overflow: ellipsis; /* Adds the ellipsis (...) for overflow */
+  word-break: break-word; /* Ensures that long words break gracefully */
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b12704;
+}

@@ -1,0 +1,143 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+    background-color: #232f3e;
+    color: #fff;
+  }
+  
+  .navbar-brand .brand-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .navbar-links a, .navbar-links button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover, .navbar-links button:hover {
+    color: #ffa41c;
+  }
+  
+  .cart-button {
+    display: flex;
+    align-items: center;
+    background-color: #2a6b38;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 5px;
+    font-weight: bold;
+  }
+  
+  .cart-icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .cart-count {
+    background-color: #ffa41c;
+    color: #232f3e;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  .cart-label {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    color: #232f3e;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  
+  .dropdown-menu a, .dropdown-menu button {
+    text-decoration: none;
+    color: #232f3e;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover, .dropdown-menu button:hover {
+    color: #ffa41c;
+  }
+
+  /* Search Bar Styles */
+.search-bar-container {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    background-color: #ffa41c;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .search-button:hover {
+    background-color: #ff8c00;
+  }
+
+  .amazon-logo {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
