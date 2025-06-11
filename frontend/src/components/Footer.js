@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Make Money with Us</h4>
           <ul>
-            <li><a href="#">Sell on Amazon</a></li>
+            <li><a href="#">Sell on Platform</a></li>
             <li><a href="#">Affiliate Marketing</a></li>
             <li><a href="#">Advertise Your Products</a></li>
           </ul>
@@ -32,7 +32,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="footer-copyright">&copy; 2024 Amazon. All rights reserved.</p>
+      <p className="footer-copyright">&copy; 2024. All rights reserved.</p>
     </footer>
   );
 };
